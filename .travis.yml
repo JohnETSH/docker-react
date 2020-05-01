@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t JohnETSH/docker-react -f Dockerfile.dev .
+  - docker build -t johnetsh/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run JohnETSH/docker-react npm run test -- --coverage
+  - docker run johnetsh/docker-react npm run test -- --coverage
 
